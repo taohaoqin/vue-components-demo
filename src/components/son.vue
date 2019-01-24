@@ -1,6 +1,6 @@
 <template>
     <div>
-        <slot :list="lists"></slot>
+        <slot  v-for="item in lists" :item="item" name="item"></slot>
     </div>
 </template>
 <script>
@@ -13,6 +13,7 @@ export default {
             {id:3,name:'沙和尚'}
             ]
         }
+        
     },
     components: {
     }

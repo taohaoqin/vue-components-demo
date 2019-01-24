@@ -1,9 +1,9 @@
 <template>
     <div>
-        <son>
-            <template slot-scope="list">
+        <son >
+            <template slot-scope="scope" slot="item" >
                 <ul>
-                    <li v-for="item in list">{{ item }}</li>
+                    <li>{{ scope.item.name }}  </li>
                 </ul>
             </template>
         </son>
