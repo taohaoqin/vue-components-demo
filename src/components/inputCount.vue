@@ -1,6 +1,6 @@
 <template>
     <div>
-        <input type="text" :value="count" @input="input"> 
+        <input type="text" :value="count" @input="input">
     </div>
 </template>
 <script>

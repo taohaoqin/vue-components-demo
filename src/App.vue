@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/Home">目录1</router-link> |
+      <router-link to="/about">目录2</router-link> |
+      <router-link to="/digui">目录3</router-link> |
+      <router-link to="/demo1">目录4</router-link> |
+      <router-link to="/demo2">目录5</router-link> |
+      <router-link to="/demo3">目录6</router-link>
     </div>
     <router-view/>
   </div>
