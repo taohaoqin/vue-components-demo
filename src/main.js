@@ -15,6 +15,11 @@ Vue.filter('filterNum', (val) => { //全局过滤器
 
 Vue.component('async', asyncExampleA)//全局组件
 
+router.beforeEach((to, from, next) => {
+  console.log('beforeEach')
+  next()
+})
+
 new Vue({
   router,
   store,

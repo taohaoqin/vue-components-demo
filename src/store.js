@@ -16,8 +16,13 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    SET_USER_INFO: ({commit}, userinfo) => {
-      commit('SET_USER_INFO', userinfo)
+    SET_USER_INFO: ({commit}) => {
+      return new Promise(resolve => {
+        commit('SET_USER_INFO', '金佳楠')
+        setTimeout(() => {
+          resolve()
+        }, 2000)
+      })
     }
   }
 })

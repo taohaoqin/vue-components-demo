@@ -34,7 +34,10 @@ export default new Router({
     {
       path: '/demo3',
       name: 'demo3',
-      component: demo3
+      component: demo3,
+      meta: {
+        keepAlive: true // 缓存
+      }
     },
     {
       path: '/about',

@@ -5,5 +5,9 @@ module.exports = {
             'vue$': 'vue/dist/vue.esm.js'
         }
     }
+  },
+  devServer: {
+    open: true,
+    port: 3000
   }
 }

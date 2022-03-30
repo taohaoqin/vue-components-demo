@@ -64,8 +64,9 @@ export default {
       this.obj.name = this.obj.name === 'aaa'? 'bbb':'aaa'
     },
     changeVal(){ 
-      this.$store.dispatch('SET_USER_INFO', '金佳楠')
-      console.log(this.$store.getters.userinfo)
+      this.$store.dispatch('SET_USER_INFO').then(() => {
+        console.log('success')
+      })
     }
   }
 }

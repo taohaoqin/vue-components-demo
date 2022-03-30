@@ -8,7 +8,9 @@
       <router-link to="/demo2">目录5</router-link> |
       <router-link to="/demo3">目录6</router-link>
     </div>
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 

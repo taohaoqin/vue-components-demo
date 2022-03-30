@@ -28,7 +28,11 @@ export default {
       mes: "啊啊啊"
     }
   },
+  created(){
+    console.log(2222)
+  },
   mounted(){
+    console.log(4444)
     dialog(this.mes)
   },
   components: {
@@ -38,5 +42,11 @@ export default {
     },
     asyncExample
   },
+  beforeRouteEnter(to, from, next){
+    console.log('beforeRouteEnter',  1111)
+    next(() => {
+      console.log('next', 3333)
+    })
+  }
 }
 </script>
